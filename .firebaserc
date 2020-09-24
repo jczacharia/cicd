@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cicd-4bcc4": {
+      "hosting": {
+        "cicd": [
+          "cicd-4bcc4"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cicd-4bcc4"
+  }
+}
