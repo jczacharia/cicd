@@ -30,13 +30,6 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      # Replace Firebase secret admin key in key json file
-      - uses: jwsi/secret-parser@master
-        with:
-          filename: firebase-service-account-key.json
-          secret-name: FIREBASE_PRIVATE_KEY
-          secret-value: ${{ secrets.FIREBASE_PRIVATE_KEY }}
-
       - name: Install Dependencies
         run: npm ci
 
